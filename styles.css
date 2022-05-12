@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
 
 :root{
   font-size: 16px;
@@ -21,8 +21,7 @@ html {
 
 body {
     background-color: var(--var-pale-blue);
-    background-image: url("https://raw.githubusercontent.com/neuyann/hosted-assets/370ac008a362983d663fc950bfff7fc0a40e53ef/pattern-background-desktop.svg"); 
-    background-repeat: no-repeat;
+    background-image: url("https://raw.githubusercontent.com/neuyann/hosted-assets/370ac008a362983d663fc950bfff7fc0a40e53ef/pattern-background-desktop.svg"); background-repeat: no-repeat;
 }
 
 
