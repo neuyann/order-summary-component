@@ -1,10 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+  font-size: 16px;
+  --var-pale-blue: hsl(225, 100%, 94%);
+  --var-bright-blue: hsl(245, 75%, 52%);
+  --var-verypale-blue: hsl(225, 100%, 98%);
+  --var-desatured-blue: hsl(224, 23%, 55%);
+  --var-dark-blue: hsl(223, 47%, 23%);
+  font-family: Outfit;
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+  margin: 0;}
 
 body {
-  font-size: 16px;
-  font-family: Outfit;
-  background-color: hsl(225, 100%, 94%);
-  background-image: url("https://raw.githubusercontent.com/neuyann/hosted-assets/370ac008a362983d663fc950bfff7fc0a40e53ef/pattern-background-desktop.svg"); 
-  background-repeat: no-repeat;
+    background-color: var(--var-pale-blue);
+    background-image: url("https://raw.githubusercontent.com/neuyann/hosted-assets/370ac008a362983d663fc950bfff7fc0a40e53ef/pattern-background-desktop.svg"); background-repeat: no-repeat;
 }
 
 
@@ -15,7 +32,7 @@ body {
   background-color: white;
   border-radius: 15px;
   margin: 2em auto 0 auto;
-  box-shadow: 0px 10px 10px hsl(224, 23%, 55%);
+  box-shadow: 0px 10px 10px var(--var-desatured-blue);
 }
 
 .imgtop{
@@ -49,7 +66,7 @@ h6{
 
 .plan{
   display:flex;
-  background: hsl(225, 100%, 98%);
+  background: var(--var-verypale-blue);
   margin: 20px 30px 20px 30px;
   border-radius: 10px;
   height: auto;
@@ -67,13 +84,13 @@ h6{
   margin-left: -80px;
 }
 .change{
-  color: hsl(245, 75%, 52%);
+  color: var(--var-bright-blue);
   font-weight: bold;
   margin-right: 5px;
 }
 
 .proceed{
-  background: hsl(245, 75%, 52%);
+  background: var(--var-bright-blue);
   margin: 20px 30px 20px 30px;
   border-radius: 10px;
   height: auto;
@@ -82,7 +99,7 @@ h6{
   font-weight: bold;
   text-align: center;
   padding: 13px;
-  box-shadow: 0px 5px 10px hsl(224, 23%, 55%);
+  box-shadow: 0px 5px 10px var(--var-desatured-blue);
 }
 #aplan{
   font-weight:bold;
