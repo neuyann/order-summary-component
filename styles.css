@@ -7,7 +7,7 @@
   --var-verypale-blue: hsl(225, 100%, 98%);
   --var-desatured-blue: hsl(224, 23%, 55%);
   --var-dark-blue: hsl(223, 47%, 23%);
-  font-family: Outfit;
+  font-family: Red Hat Display;
 }
 
 
@@ -16,8 +16,10 @@ html {
 }
 
 *, *::before, *::after {
-    box-sizing: inherit;
-  margin: 0;}
+  box-sizing: inherit;
+  margin-top: auto;
+  margin-bottom: auto;
+  }
 
 body {
     background-color: var(--var-pale-blue);
@@ -49,19 +51,17 @@ body {
 .card-content{
   text-align:center;
   margin: 20px;
-  font-weight: 500;
 }
-
 
 h3{
   font-size: 22px;
+  padding-top: 13px;
 }
-
-h6{
+#summary{
   margin: 15px 20px 10px 20px;
   color: hsl(224, 23%, 55%);
   font-size: 13px;
-  font-weight: 600;
+  font-weight:500;
 }
 
 .plan{
@@ -78,7 +78,7 @@ h6{
 
 #logomusic {
   height:35px;
-  margin: 5px 0px 2px 5px;
+  margin: 5px 5px 2px 5px;
 }
 .AnnualPlan{
   margin-left: -80px;
@@ -87,6 +87,7 @@ h6{
   color: var(--var-bright-blue);
   font-weight: bold;
   margin-right: 5px;
+  margin-bottom: 15px;
 }
 
 .proceed{
@@ -101,18 +102,47 @@ h6{
   padding: 13px;
   box-shadow: 0px 5px 10px var(--var-desatured-blue);
 }
+.linkProceed{
+  text-decoration: none;
+}
+
 #aplan{
-  font-weight:bold;
+  font-weight: 900;
+}
+
+#pricePerYear{
+  color: hsl(224, 23%, 55%);
+  font-size: 13px;
+  font-weight:500;
 }
 .cancel {
   text-align: center;
   font-weight: 600;
   font-size: 12px;
-  padding-bottom: 30px;
+  padding-bottom: 30px;;
+}
+
+.cancel a{
+  text-decoration: none;
   color: hsl(224, 23%, 55%);
 }
 
-.attribution{
+footer{
   margin: 15px;
   text-align: center;
+}
+
+
+/* activate states */
+
+.change a:active {
+  text-decoration: none;
+  color: #766CF1;}
+
+.cancel a:active {
+  color: black;
+}
+
+.proceed:active {
+  background-color: #766CF1;
 }
